@@ -32,9 +32,8 @@ header {
   padding: 10px 200px;
 }
 
-
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -42,7 +41,7 @@ header {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +56,7 @@ header {
   max-width: 90%;
   text-align: center;
   position: relative;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   animation: slideDown 0.3s;
 }
 
@@ -114,15 +113,22 @@ header {
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideDown {
-  from {transform: translateY(-20px);}
-  to {transform: translateY(0);}
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
-
 
 .logo {
   font-size: 24px;
@@ -158,31 +164,31 @@ header {
 #showLogin {
   color: #555 !important;
   text-decoration: none !important;
-  border-bottom: none !important; 
+  border-bottom: none !important;
 }
 
 #showLogin:hover {
   color: #555 !important;
   text-decoration: none !important;
-  border-bottom: none !important; 
+  border-bottom: none !important;
 }
 #showRegister {
   color: #555 !important;
   text-decoration: none !important;
-  border-bottom: none !important; 
+  border-bottom: none !important;
 }
 
 #showRegister:hover {
   color: #555 !important;
   text-decoration: none !important;
-  border-bottom: none !important; 
+  border-bottom: none !important;
 }
 
 #cartIcon {
   position: relative;
   display: inline-block;
-  font-size: 14px; 
-  line-height: 40px; 
+  font-size: 14px;
+  line-height: 40px;
   color: var(--white-color);
   text-decoration: none;
   text-align: center;
@@ -190,30 +196,36 @@ header {
 
 #cartBadge {
   position: absolute;
-  top: 8px;         
+  top: 8px;
   right: -2px;
-  background-color: red; 
-  color: #fff;          
-  font-size: 0.7rem;   
+  background-color: red;
+  color: #fff;
+  font-size: 0.7rem;
   font-weight: bold;
-  width: 16px;          
+  width: 16px;
   height: 16px;
-  line-height: 16px;   
+  line-height: 16px;
   text-align: center;
-  border-radius: 50%;   
-  display: none;        
-  pointer-events: none; 
+  border-radius: 50%;
+  display: none;
+  pointer-events: none;
 }
 
 #cartBadge.show {
-  display: inline-block; 
+  display: inline-block;
   animation: pop 0.3s ease;
 }
 
 @keyframes pop {
-  0% { transform: scale(0.5); }
-  50% { transform: scale(1.3); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 section {
@@ -758,12 +770,12 @@ section {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  overflow: visible; 
+  overflow: visible;
   padding: 0;
 }
 
 .testimonial-slide {
-  display: none; 
+  display: none;
   padding: 2rem;
   background: #f8f8f8;
   border-radius: 12px;
@@ -780,7 +792,7 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #35736e; 
+  background: #35736e;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -795,7 +807,7 @@ section {
 }
 
 #prevBtn {
-  left: -20px; 
+  left: -20px;
 }
 
 #nextBtn {
@@ -871,12 +883,12 @@ section {
   margin-bottom: 2rem;
 }
 
-.header-blog a{
+.header-blog a {
   color: var(--black-color);
   transition: 0.5s;
 }
 
-.header-blog a:hover{
+.header-blog a:hover {
   color: #555;
 }
 
@@ -884,17 +896,17 @@ section {
   display: flex;
 
   flex-decoration: row;
-  gap:20px;
+  gap: 20px;
 }
 
 .post img {
   margin-bottom: 2rem;
-  weight:360px;
-  height:249px;
-  flex-decoration:first-start;
+  weight: 360px;
+  height: 249px;
+  flex-decoration: first-start;
 }
 
-.post h3{
+.post h3 {
   margin-bottom: 0.5rem;
 }
 
@@ -905,19 +917,19 @@ footer {
 }
 
 .name-footer {
-  position: relative; 
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
 .name-footer img {
   position: absolute;
-  right: 0; 
-  top: 100%; 
-  transform: translateY(-50%) translateX(50%); 
-  width: 400px; 
+  right: 0;
+  top: 100%;
+  transform: translateY(-50%) translateX(50%);
+  width: 400px;
   height: auto;
 }
 .subtitle-footer {
@@ -964,7 +976,7 @@ footer {
 .social-footer {
   margin-top: 40px;
   display: flex;
-  gap: 15px; 
+  gap: 15px;
   justify-content: first-start;
 }
 
@@ -972,8 +984,8 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #f2f2f2; 
-  color: #000; 
+  background: #f2f2f2;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -984,15 +996,15 @@ footer {
 
 .social-footer a:hover {
   background: var(--secondary-color);
-  color: #fff; 
+  color: #fff;
 }
 
 .footer2 {
   margin-top: 20px;
   padding-top: 15px;
-  border-top: 1px solid #000; 
+  border-top: 1px solid #000;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   font-size: 12px;
@@ -1001,13 +1013,13 @@ footer {
 .footer2 p {
   margin: 0;
   flex: 1;
-  text-align: left; 
-    color: var(--black-color);
+  text-align: left;
+  color: var(--black-color);
 }
 
 .footer2 div {
   display: flex;
-  gap: 15px; 
+  gap: 15px;
 }
 
 .footer2 a {

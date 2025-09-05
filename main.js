@@ -50,9 +50,14 @@ document.addEventListener("DOMContentLoaded", () => {
     alert("تم إنشاء الحساب بنجاح!");
     loginModal.style.display = "none";
   });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".toggle-password").forEach(icon => {
+    icon.addEventListener("click", () => {
+      const input = icon.previousElementSibling;
+      input.type = input.type === "password" ? "text" : "password";
+    });
+  });
+
   const cartBadge = document.getElementById("cartBadge");
   const cardsList = document.getElementById("cards-list");
   let cartItems = []; 

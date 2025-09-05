@@ -26,7 +26,6 @@
           <div id="loginModal" class="modal">
             <div class="modal-content">
               <span id="closeModal" class="close">&times;</span>
-
               <div id="loginFormDiv">
                 <h2>Sign in</h2>
                 <form id="loginForm">
@@ -36,19 +35,22 @@
                     placeholder="اسم المستخدم"
                     required
                   />
-                  <input
-                    type="password"
-                    id="password"
-                    placeholder="كلمة المرور"
-                    required
-                  />
+                  <div class="password-container">
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder="كلمة المرور"
+                      required
+                    />
+                    <i class="fa-solid fa-eye-slash toggle-password"></i>
+                  </div>
                   <button type="submit">Sign In</button>
                 </form>
                 <p>
-                  I Don't Have Account?<a href="#" id="showRegister">Sign Up</a>
+                  I Don't Have Account?
+                  <a href="#" id="showRegister">Sign Up</a>
                 </p>
               </div>
-
               <div id="registerFormDiv" style="display: none">
                 <h2>Sign Up</h2>
                 <form id="registerForm">
@@ -64,20 +66,25 @@
                     placeholder="البريد الإلكتروني"
                     required
                   />
-                  <input
-                    type="password"
-                    id="newPassword"
-                    placeholder="كلمة المرور"
-                    required
-                  />
+                  <div class="password-container">
+                    <input
+                      type="password"
+                      id="newPassword"
+                      placeholder="كلمة المرور"
+                      required
+                    />
+                    <i class="fa-solid fa-eye-slash toggle-password"></i>
+                  </div>
                   <button type="submit">Create Account</button>
                 </form>
                 <p>
-                  I Have Account?<a class="" href="#" id="showLogin">Sign In</a>
+                  I Have Account?
+                  <a href="#" id="showLogin">Sign In</a>
                 </p>
               </div>
             </div>
           </div>
+
           <a href="#" id="cartIcon" style="position: relative">
             <i class="fa-solid fa-cart-plus"></i>
             <span id="cartBadge">0</span>

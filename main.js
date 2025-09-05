@@ -15,15 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     registerFormDiv.style.display = "none";
   });
 
-  closeModal.addEventListener("click", () => {
-    loginModal.style.display = "none";
-  });
+  closeModal.addEventListener("click", () => { loginModal.style.display = "none"; });
 
-  window.addEventListener("click", (e) => {
-    if (e.target === loginModal) {
-      loginModal.style.display = "none";
-    }
-  });
+  window.addEventListener("click", (e) => { if (e.target === loginModal) loginModal.style.display = "none"; });
 
   showRegister.addEventListener("click", (e) => {
     e.preventDefault();
@@ -54,7 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".toggle-password").forEach(icon => {
     icon.addEventListener("click", () => {
       const input = icon.previousElementSibling;
-      input.type = input.type === "password" ? "text" : "password";
+      if (input.type === "password") {
+        input.type = "text";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+      } else {
+        input.type = "password";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+      }
     });
   });
 
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("add-product-form");

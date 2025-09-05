@@ -1,6 +1,26 @@
 {
     "cSpell.words": [
+        "accumsan",
+        "aliquet",
+        "arcu",
+        "augue",
+        "cursus",
+        "Donec",
+        "egestas",
+        "elit",
+        "euismod",
+        "felis",
+        "fermentum",
         "Furni",
-        "vivethe"
-    ]
+        "mattis",
+        "vivethe",
+        "الإلكتروني",
+        "البريد",
+        "المرور",
+        "المستخدم",
+        "كلمة"
+    ],
+    "cSpell.enabledFileTypes": {
+        "postcss": false
+    }
 }
